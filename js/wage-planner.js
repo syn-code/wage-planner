@@ -1,5 +1,5 @@
 
-document.querySelector('#submit-button').addEventListener('click', function() {
+document.querySelector('#submit-button').addEventListener('click', () => {
 
     
 
