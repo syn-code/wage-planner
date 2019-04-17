@@ -1,8 +1,6 @@
 
 document.querySelector('#submit-button').addEventListener('click', () => {
 
-    'use strict';
-
     const allInput = document.querySelector('#form-holder').querySelectorAll('input');
     var date = new Date();
     
