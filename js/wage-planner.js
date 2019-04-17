@@ -1,6 +1,6 @@
 
 document.querySelector('#submit-button').addEventListener('click', () => {
-    'use strict';
+
     const allInput = document.querySelector('#form-holder').querySelectorAll('input');
     var date = new Date();
     
@@ -40,7 +40,7 @@ paymentObject.moneyLeft = paymentObject.monthly_wage - paymentObject.totalBill;
     var dateEntered = new Date(paymentObject.next_payday);
     var daysLeftUntilPayDay = dateEntered.getDate() - parseInt(day);
     paymentObject.daysLeft = `${daysLeftUntilPayDay} days remaining`;
-    console.log(this.daysLeft);
+    //console.log(this.daysLeft);
     var dailySpend = paymentObject.moneyLeft / daysLeftUntilPayDay;
     console.table(paymentObject);
     console.log(dailySpend);
