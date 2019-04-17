@@ -42,6 +42,7 @@ paymentObject.moneyLeft = paymentObject.monthly_wage - paymentObject.totalBill;
     var dateEntered = new Date(paymentObject.next_payday);
     var daysLeftUntilPayDay = dateEntered.getDate() - parseInt(day);
     this.daysLeft = daysLeftUntilPayDay;
+    console.log(this.daysLeft);
     var dailySpend = paymentObject.moneyLeft / daysLeftUntilPayDay;
     console.table(paymentObject);
     console.log(dailySpend);
